@@ -261,4 +261,3 @@ The user's message is sent to the LLM provider when this layer is on, so users s
 | Identifies and fixes bugs | "A bug found and fixed" above, and Step 9 |
 | Tests with varied inputs | `tests_expected.md` and the ten test logs above |
 | Refines code based on test results | Step 9: the change made because test 5 failed, and test 5 run again |
-
