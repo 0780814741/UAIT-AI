@@ -235,9 +235,6 @@ I also checked the call against the real `anthropic` Python SDK using a mock ser
 **To turn it on:** `pip install anthropic`, put the key in the environment (or in Colab Secrets) as `ANTHROPIC_API_KEY`, and remove the `#` signs in Step 12c. **Never write a key in the notebook or the repository.**
 The user's message is sent to the LLM provider when this layer is on, so users should be told not to type personal details.
 
-## Web version (bonus)
-
-`app.py` runs the same chatbot as a web page, using Gradio. The chatbot code is copied unchanged from the notebook (including the fix from test 5), and each visitor gets their own conversation, so two people never mix. It is hosted on Hugging Face Spaces: [open the live chatbot](https://huggingface.co/spaces/0780814741/uait-ai).
 
 To run it on your own computer: `pip install -r requirements.txt`, then `python app.py`.
 
