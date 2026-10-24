@@ -45,6 +45,7 @@ The notebook `uait_ai.ipynb` follows the course's steps:
 - **Step 12 (optional): the LLM layer.** Off by default; see its own section below.
 
 **Design.** My answers to *Designing Your Chatbot*, written before the code: [`designing_your_chatbot.md`](designing_your_chatbot.md).
+- **Web version.** `app.py` and `requirements.txt` put the same chatbot online (see [Web version](#web-version-bonus)).
 
 ## How to run it
 
