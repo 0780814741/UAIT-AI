@@ -7,7 +7,7 @@ An **optional** LLM layer (off by default) can be switched on on top of it: see 
 
 Built for **AITCD001 Chatbots Development**, Learning Outcome 2 (Portfolio Project).
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/0780814741/uait-ai/blob/main/uait_ai.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/0780814741/UAIT-AI/blob/main/uait_ai.ipynb)
 
 > The chatbot is an automated program, not a member of staff. It says so in its greeting, and "human" connects the user to a person at any point.
 > Its facts live in the dictionaries `PROGRAMS`, `FEES` and `FACTS` in the notebook. They come from the course and from public listings and **must be checked against UAIT's official sources**.
