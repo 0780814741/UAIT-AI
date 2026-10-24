@@ -8,6 +8,7 @@ An **optional** LLM layer (off by default) can be switched on on top of it: see 
 Built for **AITCD001 Chatbots Development**, Learning Outcome 2 (Portfolio Project).
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/0780814741/UAIT-AI/blob/main/uait_ai.ipynb)
+**Live demo:** https://huggingface.co/spaces/0780814741/uait-ai
 
 > The chatbot is an automated program, not a member of staff. It says so in its greeting, and "human" connects the user to a person at any point.
 > Its facts live in the dictionaries `PROGRAMS`, `FEES` and `FACTS` in the notebook. They come from the course and from public listings and **must be checked against UAIT's official sources**.
@@ -233,6 +234,13 @@ I also checked the call against the real `anthropic` Python SDK using a mock ser
 **To turn it on:** `pip install anthropic`, put the key in the environment (or in Colab Secrets) as `ANTHROPIC_API_KEY`, and remove the `#` signs in Step 12c. **Never write a key in the notebook or the repository.**
 The user's message is sent to the LLM provider when this layer is on, so users should be told not to type personal details.
 
+## Web version (bonus)
+
+`app.py` runs the same chatbot as a web page, using Gradio. The chatbot code is copied unchanged from the notebook (including the fix from test 5), and each visitor gets their own conversation, so two people never mix. It is hosted on Hugging Face Spaces: [open the live chatbot](https://huggingface.co/spaces/0780814741/uait-ai).
+
+To run it on your own computer: `pip install -r requirements.txt`, then `python app.py`.
+
+The optional LLM layer is off in the web version, so it needs no key.
 ## Known limitations
 
 - **Negation (test 10).** "i dont want a callback" still starts the callback questions, because the rule only looks for the word *callback*. Fixing it would need a rule that checks for words such as *dont*, *not* and *no* in front of an intent.
