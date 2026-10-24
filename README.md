@@ -2,13 +2,13 @@
 
 A rule-based chatbot for people who ask about the **United African Institute of Technology (UAIT)** in Kigali:
 future students (programs, applying, fees, location) and current students (homework deadlines, class times, exams).
-The chatbot itself uses Python, `re` (regular expressions), dictionaries and functions only: there is no machine learning in the core.
-An **optional** LLM layer (off by default) can be switched on on top of it: see [Optional: an LLM on top of the rules](#optional-an-llm-on-top-of-the-rules).
+The chatbot itself uses Python, `re` (regular expressions), dictionaries and functions only: there is no machine learning.
 
 Built for **AITCD001 Chatbots Development**, Learning Outcome 2 (Portfolio Project).
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/0780814741/UAIT-AI/blob/main/uait_ai.ipynb)
-**Live demo:** https://huggingface.co/spaces/0780814741/uait-ai
+
+**Live demo (online now):** [https://uait-ai.onrender.com](https://uait-ai.onrender.com) (free hosting: the first load can take about a minute)
 
 > The chatbot is an automated program, not a member of staff. It says so in its greeting, and "human" connects the user to a person at any point.
 > Its facts live in the dictionaries `PROGRAMS`, `FEES` and `FACTS` in the notebook. They come from the course and from public listings and **must be checked against UAIT's official sources**.
@@ -42,10 +42,9 @@ The notebook `uait_ai.ipynb` follows the course's steps:
 - **Step 5: the callback flow.** `FLOW_STEPS` (the questions) and `continue_flow` (the machinery), with a confirmation.
 - **Step 6: context.** A remembered name, the last intent, and follow-ups ("and drone?").
 - **Step 7: the fallback.** It says what the chatbot can do, writes the message to `UNMATCHED`, and after two misses in a row offers a member of staff. Handler errors are caught and logged in `ERROR_LOG`.
-- **Step 12 (optional): the LLM layer.** Off by default; see its own section below.
+- **Web version (bonus).** `app.py` and `requirements.txt` put the same chatbot online, live at [https://uait-ai.onrender.com](https://uait-ai.onrender.com) (see [Web version](#web-version-bonus)).
 
 **Design.** My answers to *Designing Your Chatbot*, written before the code: [`designing_your_chatbot.md`](designing_your_chatbot.md).
-- **Web version.** `app.py` and `requirements.txt` put the same chatbot online (see [Web version](#web-version-bonus)).
 
 ## How to run it
 
@@ -215,44 +214,29 @@ Bot: So: fees, afternoon. Shall I send the request? Yes or no.
 
 I then ran all ten tests again. Tests 1 to 9 passed, test 10 failed in the same way as before.
 
-## Optional: an LLM on top of the rules
+## Web version (bonus)
 
-Step 12 of the notebook adds a large language model as a **helper for messages the rules do not understand**. It is off by default
-(`LLM_CLASSIFIER = None`), and everything described above, including the ten tests, works without it, without a key and without internet.
+The chatbot is **uploaded and live online**: [https://uait-ai.onrender.com](https://uait-ai.onrender.com)
 
-The rules stay in charge. The design has four limits:
-
-1. **Rules first.** The LLM is called only after the rules and the follow-up logic found nothing, at the point where the chatbot would otherwise say "I did not understand".
-2. **It routes, it does not answer.** It may only name one intent from a fixed list of read-only intents (programs, apply, fees, location, homework, schedule, exams, greeting). The reply is then written by the normal handler from the verified dictionaries, so the LLM cannot invent facts about UAIT. It cannot start a callback, cancel, or change anything.
-3. **Anything unexpected is thrown away.** If the model says anything other than exactly one allowed word, or if there is an error or a timeout, the normal fallback runs. The model's text is data, never instructions (`clean_llm_answer`).
-4. **Everything it rescues is logged** in `LLM_RESCUED`, so the missed phrasing can be turned into a proper rule.
-
-**How it was tested.** Step 12b tests our own code with a stand-in client (`FakeClient`): correct word, wrong word, `none`, a forbidden intent (`callback`), a prompt-injection-style answer, an empty answer, an error, a repeated message, and an end-to-end rescue of "how do i get to uait". It also checks that the LLM is **not** called for anything the rules understand.
-I also checked the call against the real `anthropic` Python SDK using a mock server. The layer has **not** been run against the live API in this repository's test run, because that needs a key.
-
-**A bug found in the layer's own test.** The first version kept its answers in one global dictionary. The first test's answer (`fees`) was then returned for every later test, so seven checks failed. The cache is now created inside each classifier, and all checks pass.
-
-**To turn it on:** `pip install anthropic`, put the key in the environment (or in Colab Secrets) as `ANTHROPIC_API_KEY`, and remove the `#` signs in Step 12c. **Never write a key in the notebook or the repository.**
-The user's message is sent to the LLM provider when this layer is on, so users should be told not to type personal details.
-
+`app.py` runs the same chatbot as a web page, using Gradio. The chatbot code is copied unchanged from the notebook (including the fix from test 5), and each visitor gets their own conversation, so two people never mix. It is hosted on Render's free plan and deployed from this repository (`app.py` and `requirements.txt`). Because the plan is free, the service sleeps after about 15 minutes without visitors, so **the first load can take about a minute**.
 
 To run it on your own computer: `pip install -r requirements.txt`, then `python app.py`.
 
-The optional LLM layer is off in the web version, so it needs no key.
+The web version needs no key and no extra service. Please do not type personal details in the live chatbot.
+
 ## Known limitations
 
 - **Negation (test 10).** "i dont want a callback" still starts the callback questions, because the rule only looks for the word *callback*. Fixing it would need a rule that checks for words such as *dont*, *not* and *no* in front of an intent.
-- **Phrasings not understood.** In Step 10, 2 of 9 local-phrasing messages ended in `UNMATCHED`: "when is the next intake" (there is no intake intent yet) and "how do i get to uait" (the location rule only knows *where*, *address*, *directions* and similar words). With the optional LLM layer on, these can be routed to an existing intent; the rules themselves are unchanged.
+- **Phrasings not understood.** In Step 10, 2 of 9 local-phrasing messages ended in `UNMATCHED`: "when is the next intake" (there is no intake intent yet) and "how do i get to uait" (the location rule only knows *where*, *address*, *directions* and similar words).
 - **A reply phrased as a question is not an answer.** After the fix, someone who answers "what about fees?" is asked the question again.
 - **Facts.** The bot does not hold tuition amounts, the timetable or exam dates. It says so and offers a callback or a person. The facts it does give must be verified before real use.
-- **Logs are kept in memory only.** `UNMATCHED` and `CALLBACKS` disappear when the notebook is closed.
+- **Logs are kept in memory only.** `UNMATCHED` and `CALLBACKS` disappear when the notebook is closed or the web service restarts.
 
 ## Privacy and ethics
 
 - No real names, phone numbers, ID numbers or keys are in this repository. The name "Sam" in the tests is invented.
 - The chatbot never asks for personal details, and its greeting says it is a computer program.
 - It does not pretend to know what it does not know: unknown facts lead to admissions or a person.
-- With the optional LLM layer on, the user's message is sent to the LLM provider. The default is off.
 
 ## Rubric map (Learning Outcome 2)
 
