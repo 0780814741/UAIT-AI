@@ -1,0 +1,361 @@
+text,intent,source,split
+please guide me through the admission process,apply,written,train
+which papers should I prepare for admission,apply,written,train
+what is the first step to get admitted,apply,written,train
+kwiyandikisha bikorwa bite,apply,local,train
+can I apply online,apply,written,train
+is registration still open,apply,written,train
+I need help completing my application,apply,written,train
+how do I enroll for AI technology,apply,written,train
+do I need previous qualifications to apply,apply,written,train
+I would like to become a student,apply,written,train
+how do I apply,apply,rules,train
+nkeneye kwiyandikisha muri iyi gahunda,apply,local,train
+gusaba kwiga bisaba iki,apply,local,train
+can you share the admissions link,apply,written,train
+mwampa amabwiriza yo kwiyandikisha,apply,local,train
+kwinjira muri institute bikorwa gute,apply,local,train
+where is the application form,apply,rules,train
+I want to join UAIT,apply,rules,train
+I want to start the enrollment process,apply,written,train
+how can I register as a new student,apply,written,train
+ndashaka gusaba kwiga muri UAIT,apply,local,train
+what are the requirements to join,apply,written,train
+where do I send my certificates,apply,written,train
+when does enrollment open,apply,written,train
+request a call back from the office,callback,rules,train
+please set up a callback for me,callback,written,train
+I want an advisor to reach me by phone,callback,written,train
+I want to talk with a staff member,callback,written,train
+I need a callback about my application,callback,written,train
+ndashaka appointment n'abashinzwe admissions,callback,local,train
+please have your team contact me,callback,written,train
+I would like to speak to an admissions officer,callback,written,train
+I need a call to discuss the courses,callback,written,train
+someone from UAIT should phone me,callback,written,train
+please call me,callback,rules,train
+can I book a time to talk by phone,callback,written,train
+please ring me when someone is free,callback,written,train
+I prefer to explain my question over the phone,callback,written,train
+please phone me regarding registration,callback,written,train
+I need an appointment with admissions,callback,rules,train
+would an admissions representative call me,callback,written,train
+mumpamagare kuri application yanjye,callback,local,train
+I want the office to call me back tomorrow,callback,written,train
+contact me about enrollment,callback,rules,train
+I need someone to contact me about fees,callback,written,train
+please arrange a phone consultation,callback,written,train
+can the school reach me on my number,callback,written,train
+how do I request a phone call from UAIT,callback,written,train
+please cancel the appointment,cancel,rules,train
+no need to call me anymore,cancel,written,train
+forget the call I asked for,cancel,written,train
+please take my name off the callback list,cancel,written,train
+"ndahinduye ibitekerezo, mubihagarike",cancel,local,train
+ntimuzampamagare nkiri kubihagaritse,cancel,local,train
+I don't want the appointment anymore,cancel,written,train
+I won't be available for that callback so cancel it,cancel,written,train
+cancel the call scheduled for me,cancel,written,train
+I no longer need someone to call me,cancel,written,train
+call it off please,cancel,rules,train
+ndashaka guhagarika ubusabe bwanjye,cancel,local,train
+I have decided not to receive a call,cancel,written,train
+stop the call request I made earlier,cancel,written,train
+remove my callback from the list,cancel,written,train
+can you delete my callback request,cancel,written,train
+guhagarika appointment yanjye,cancel,local,train
+I don't want to continue with the request,cancel,written,train
+please stop the appointment process,cancel,written,train
+I want to withdraw the appointment request,cancel,written,train
+please withdraw my request for a phone call,cancel,written,train
+I will contact the school myself instead,cancel,written,train
+undo my callback booking,cancel,written,train
+never mind about the callback,cancel,rules,train
+ibizamini bya semester ni ryari,exams,local,train
+I cannot find my exam score,exams,written,train
+is there a resit examination,exams,written,train
+what are my marks,exams,rules,train
+when is the next assessment,exams,written,train
+please explain the exam rules,exams,written,train
+are results available online,exams,written,train
+amanota yanjye nayabona nte,exams,local,train
+where do students collect their grades,exams,written,train
+how can I check my results,exams,rules,train
+do we have a test this week,exams,written,train
+tuzakora test ryari,exams,local,train
+how are final marks calculated,exams,written,train
+I want to know my examination date,exams,written,train
+when are the exams,exams,rules,train
+ese exam timetable yarasohotse,exams,local,train
+can I retake an exam if I fail,exams,written,train
+when will results be released,exams,written,train
+will the lecturer announce the grades,exams,written,train
+nabuze result y'ikizamini,exams,local,train
+what date is the final examination,exams,written,train
+when should I expect my transcript,exams,written,train
+is the exam postponed,exams,written,train
+where can I see my assessment results,exams,written,train
+kwiga AI technology bisaba angahe,fees,local,train
+minerval ya cyber security imeze ite,fees,local,train
+how much money is required for enrollment,fees,written,train
+is there a deposit before admission,fees,written,train
+where can I see the official fee schedule,fees,written,train
+what amount do I need before classes start,fees,written,train
+please send me the current fee structure,fees,written,train
+mushobora kumbwira amafaranga y'amasomo?,fees,local,train
+how much does tuition cost,fees,rules,train
+what is the fee for the AI course,fees,written,train
+is the application fee separate from tuition,fees,written,train
+how much is the registration charge,fees,written,train
+I need details about tuition and other charges,fees,written,train
+minerval ni angahe,fees,local,train
+amafaranga yo kwiyandikisha ni angahe,fees,local,train
+do you have a payment plan for students,fees,written,train
+does the school offer scholarships or discounts,fees,written,train
+amafaranga y'ishuri ni angahe,fees,local,train
+how much should I pay to join UAIT,fees,written,train
+is tuition paid monthly or per term,fees,written,train
+what is the price of drone technology,fees,written,train
+do fees differ between programs,fees,written,train
+what are the fees,fees,rules,train
+hw much is the application fee,fees,rules,train
+hi there,greeting,rules,train
+hello there,greeting,written,train
+hey there assistant,greeting,written,train
+muraho neza,greeting,local,train
+hello how are you,greeting,written,train
+hey UAIT assistant,greeting,written,train
+bite se,greeting,local,train
+is anyone there,greeting,written,train
+bite,greeting,local,train
+hey can you help me,greeting,written,train
+how is your day,greeting,written,train
+good evening,greeting,written,train
+good morning,greeting,written,train
+muraho,greeting,local,train
+good day,greeting,written,train
+hi I need some information,greeting,written,train
+good afternoon,greeting,written,train
+good morning everyone,greeting,written,train
+hello,greeting,rules,train
+amakuru yawe,greeting,local,train
+hey,greeting,rules,train
+hello team,greeting,written,train
+mwaramutse,greeting,local,train
+mwiriwe neza UAIT,greeting,local,train
+what is the assignment deadline,homework,rules,train
+when is the homework due,homework,rules,train
+mwadufasha kumenya deadline ya assignment,homework,local,train
+I cannot see the assignment instructions,homework,written,train
+is the AITCD001 task due this Thursday,homework,written,train
+please tell me the due date for the portfolio,homework,written,train
+what happens if I submit late,homework,written,train
+what time exactly is the deadline,homework,written,train
+which platform should I use to submit,homework,written,train
+when should I submit my portfolio,homework,rules,train
+is the project submission open now,homework,written,train
+ese hari umukoro mushya,homework,local,train
+when is the next task expected,homework,written,train
+is there a practical task for AITCD001,homework,written,train
+portfolio tuyohereza ryari,homework,local,train
+akazi ko murugo kazatangwa ryari,homework,local,train
+is the homework due before midnight,homework,written,train
+assignment igomba gutangwa ryari,homework,local,train
+where are the homework guidelines,homework,written,train
+can I submit my work through email,homework,written,train
+do we have homework to complete this week,homework,written,train
+I need the deadline for this week's work,homework,written,train
+I missed the homework deadline what should I do,homework,written,train
+where do I upload my homework,homework,written,train
+where should I come for admission,location,written,train
+ishuri riri he i Kigali,location,local,train
+aho mwigishiriza ni hehe,location,local,train
+campus iri he,location,local,train
+mwashyira hano location ya campus,location,local,train
+can I visit your admissions office,location,written,train
+which neighborhood is UAIT in,location,written,train
+please share directions to UAIT,location,written,train
+how do I get to the institute,location,written,train
+is the campus in Kimihurura,location,written,train
+is your office in Gasabo,location,written,train
+which area of Kigali are you located in,location,written,train
+is the campus address in Kigali,location,written,train
+wer is the campus,location,rules,train
+can you tell me the campus location,location,written,train
+how can I reach the campus by taxi,location,written,train
+what district is the school in,location,written,train
+muri Kimihurura he?,location,local,train
+please tell me where the institute is based,location,written,train
+what landmark is close to your campus,location,written,train
+give me directions from Kigali Convention Centre,location,written,train
+UAIT iherereye mu wuhe murenge,location,local,train
+where is UAIT,location,rules,train
+ni gute nageza kuri campus,location,local,train
+I would like to introduce myself as Kevin,name,written,train
+my full name is Grace Uwase,name,written,train
+hello my name is Alice,name,written,train
+this is Claude speaking,name,written,train
+my name is Jean Pierre,name,written,train
+nitwa Eric kandi ndi umunyeshuri,name,local,train
+people call me Sandrine,name,written,train
+njye nitwa Fabrice,name,local,train
+you can call me Patrick,name,written,train
+for this chat my name is Esther,name,written,train
+I am called Diane,name,written,train
+nitwa Aline,name,local,train
+I am called Olive,name,written,train
+nitwa Sandrine wo muri Kigali,name,local,train
+you may address me as Robert,name,written,train
+my name is Beata and I need information,name,written,train
+I'm Alice,name,written,train
+I am Brian from Kigali,name,written,train
+banyita Kevin,name,local,train
+my first name is Clarisse,name,written,train
+I am known as Thierry,name,written,train
+my name is Jean,name,rules,train
+the name I use is Samuel,name,written,train
+izina ryanjye ni Marie,name,local,train
+ndashaka akazi,out_of_scope,local,train
+mwambwira uko bateka umuceri,out_of_scope,local,train
+help me write a birthday message,out_of_scope,written,train
+my internet is not working,out_of_scope,written,train
+how do I apply for a passport,out_of_scope,written,train
+can you recommend a restaurant,out_of_scope,written,train
+sell me a laptop,out_of_scope,written,train
+what time is the football game,out_of_scope,written,train
+how do I cook rice,out_of_scope,written,train
+what is happening in the news,out_of_scope,written,train
+I lost my phone yesterday,out_of_scope,written,train
+where can I watch a movie,out_of_scope,written,train
+ndashaka taxi ijya airport,out_of_scope,local,train
+what is the population of Rwanda,out_of_scope,written,train
+telefone yanjye yarabuze,out_of_scope,local,train
+tell me a joke,out_of_scope,written,train
+I need a taxi to the airport,out_of_scope,written,train
+can you help me find a job,out_of_scope,written,train
+can you repair my computer,out_of_scope,written,train
+I need medical advice,out_of_scope,written,train
+please translate this paragraph,out_of_scope,written,train
+what is the capital of Japan,out_of_scope,written,train
+where can I buy shoes,out_of_scope,written,train
+amakuru ya football ni ayahe,out_of_scope,local,train
+show me the courses available this year,programs,written,train
+I want to know about jewelry design,programs,written,train
+which program is best for someone interested in robotics,programs,written,train
+which programs does the school provide,programs,written,train
+is cybersecurity one of your courses,programs,written,train
+please list all available programs,programs,written,train
+I want details about your technology programs,programs,written,train
+what can I study at your institute,programs,written,train
+what programs do you offer,programs,rules,train
+amasomo ya AI technology arimo iki,programs,local,train
+tell me about cyber security,programs,rules,train
+are there practical courses in technology,programs,written,train
+do you teach drone technology,programs,written,train
+wat progs u hav,programs,local,train
+tell me what the cyber security program covers,programs,written,train
+what are the study options at the institute,programs,written,train
+ni ayahe masomo mutanga,programs,local,train
+I am interested in the AI program,programs,written,train
+do you have an artificial intelligence course,programs,written,train
+which courses can I study at UAIT,programs,written,train
+does UAIT teach creative arts,programs,written,train
+do you offer a piano course,programs,written,train
+what programs are accepting students,programs,written,train
+I would like a description of each course,programs,written,train
+amasomo atangira saa ngahe,schedule,local,train
+when is the next lecture,schedule,written,train
+what time does the morning class start,schedule,written,train
+when does the afternoon session begin,schedule,written,train
+is there a break between lectures,schedule,written,train
+are lessons held in the evening,schedule,written,train
+which days do we attend lectures,schedule,written,train
+amasomo ya cyber security aba ryari,schedule,local,train
+mwaduha timetable y'iki cyumweru,schedule,local,train
+where can I check the weekly timetable,schedule,written,train
+does the institute have evening lessons,schedule,written,train
+ni saa ngahe tugomba kugera kuri campus,schedule,local,train
+what is the timetable for AI students,schedule,written,train
+ku wa gatanu hari lecture,schedule,local,train
+what time should I arrive at campus,schedule,written,train
+are lectures happening tomorrow,schedule,written,train
+schedule yacu iri he,schedule,local,train
+please confirm the class starting time,schedule,written,train
+please send the timetable,schedule,rules,train
+how often do students attend classes,schedule,written,train
+I need to know my class schedule,schedule,written,train
+wat tym are lectures,schedule,local,train
+ni ryari dutangira kwiga,schedule,local,train
+what is the schedule for this semester,schedule,written,train
+how can international applicants register,apply,written,test
+what documents are needed for admission,apply,written,test
+I want to submit an application,apply,written,test
+where can I get an application form,apply,written,test
+when is the next intake,apply,written,test
+ni ryari kwakira abanyeshuri bitangira,apply,local,test
+can the school call me this afternoon,callback,written,test
+mwambwira igihe mwampamagarira?,callback,local,test
+could you schedule a call with admissions,callback,written,test
+ndashaka ko mwampamagara,callback,local,test
+mwampamagara mukansobanurira?,callback,local,test
+can I get a callback,callback,rules,test
+reka guhagarika gahunda yari yasabwe,cancel,local,test
+cancel my callback request,cancel,rules,test
+I changed my mind about speaking to admissions,cancel,written,test
+please void the call arrangement,cancel,written,test
+kindly cancel the phone consultation,cancel,written,test
+cancle my request,cancel,rules,test
+how do I appeal an exam result,exams,written,test
+ibizamini bizaba ryari,exams,local,test
+what is the procedure after exam results,exams,written,test
+do we have practical exams,exams,written,test
+amanota arasohoka ryari,exams,local,test
+has the exam timetable been published,exams,written,test
+what are the charges for jewelry design,fees,written,test
+how much is cyber security training,fees,written,test
+are there extra costs apart from tuition,fees,written,test
+tell me the prices for the programs,fees,rules,test
+can I pay school fees in installments,fees,written,test
+what is the total cost for one semester,fees,written,test
+hi chatbot,greeting,written,test
+mwiriwe neza,greeting,local,test
+hello UAIT,greeting,written,test
+amakuru,greeting,local,test
+greetings,greeting,written,test
+mwaramutse neza,greeting,local,test
+please explain how to submit the project,homework,written,test
+assignment tuyishyira he,homework,local,test
+what is the last date for uploading the assignment,homework,written,test
+can you remind me of the portfolio deadline,homework,written,test
+has the new assignment been released,homework,written,test
+homework ya AITCD001 izarangira ryari,homework,local,test
+where can I find your offices,location,written,test
+is UAIT near the city center,location,written,test
+what is your address,location,rules,test
+I need the physical address of the institute,location,written,test
+send me the location pin,location,written,test
+I am trying to visit the school today,location,written,test
+my name is Aline,name,rules,test
+my name is Eric,name,rules,test
+ndi Diane,name,local,test
+I should introduce myself as Chantal,name,written,test
+please call me Emmanuel,name,written,test
+I go by the name David,name,written,test
+what is the exchange rate today,out_of_scope,written,test
+how do I reset my Facebook password,out_of_scope,written,test
+what is the weather today,out_of_scope,written,test
+can you book a hotel for me,out_of_scope,written,test
+how do I open a bank account,out_of_scope,written,test
+who won the football match,out_of_scope,written,test
+do you have a course about artificial intelligence,programs,written,test
+is piano performance available,programs,written,test
+can you tell me about the drone course,programs,written,test
+what subjects are included in drone technology,programs,written,test
+are there short courses at UAIT,programs,written,test
+can you explain the jewelry design course,programs,written,test
+are there classes on Saturday,schedule,written,test
+what time is class,schedule,rules,test
+can you share this week's class calendar,schedule,written,test
+are classes online or on campus,schedule,written,test
+do different programs have different schedules,schedule,written,test
+how many hours do we study each day,schedule,written,test
